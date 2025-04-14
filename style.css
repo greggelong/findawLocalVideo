@@ -1,0 +1,36 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+.warning-background {
+  background: repeating-linear-gradient(
+    -45deg, /* Slanted angle */
+    black 0px,
+    black 80px,  /* Thickness of black stripe */
+    yellow 80px,
+    yellow 160px  /* Thickness of yellow stripe */
+  );
+  
+}
+
+
+.loadingclass {
+  position: absolute; /* Position it absolutely within the parent */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for exact centering */
+  color: rgb(255, 3, 3); /* Text color */
+  font-family: monospace; /* Monospace font for the preformatted text */
+  font-size: 4em; /* Adjust font size */
+  text-align: center; /* Center-align the text */
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 10; /* Ensure it's above the background */
+}
+
+pre {
+  margin: 0; /* Remove default margin */
+}
